@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-section">
+  <div class="contact-section wow animate__animated animate__fadeIn">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -40,8 +40,14 @@
 </template>
 
 <script>
+import { WOW } from "wowjs";
+import "animate.css";
+
 export default {
   name: "ContactSection",
+  mounted() {
+    new WOW().init();
+  },
 };
 </script>
 
@@ -50,55 +56,56 @@ export default {
   padding: 50px 0;
   background-color: #fff;
   color: #333;
-  h3 {
-    font-size: 36px;
-    font-weight: 300;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-list a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
     margin-bottom: 20px;
-    color: #333;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 
   .contact-list {
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 10px;
-
-      i {
-        margin-right: 10px;
-        color: #007bff;
-      }
-
-      a {
-        color: #007bff;
-        text-decoration: none;
-        transition: color 0.3s;
-
-        &:hover {
-          color: #0056b3;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    .row {
-      flex-direction: column;
-
-      .col-md-4,
-      .col-md-8 {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      h3 {
-        font-size: 30px;
-      }
-
-      .contact-list {
-        font-size: 14px;
-      }
-    }
+    font-size: 14px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="home container">
+  <div class="home container wow animate__animated animate__fadeIn">
     <div class="home-content d-flex align-items-center flex-column flex-md-row">
       <div class="col image-container">
         <img src="@/assets/Home/kohli.png" alt="Dr. Gurmander Singh Kohli" />
@@ -26,6 +26,8 @@
 import Contact from "@/components/Contact.vue";
 import Profile from "@/components/Profile.vue";
 import FAQ from "@/components/FAQ.vue";
+import { WOW } from "wowjs";
+import "animate.css";
 
 export default {
   name: "HomeView",
@@ -34,6 +36,9 @@ export default {
     Profile,
     FAQ,
   },
+  mounted() {
+    new WOW().init();
+  },
 };
 </script>
 
@@ -41,6 +46,7 @@ export default {
 .home {
   padding-top: 100px;
   font-size: 1.2rem;
+  /* Ensure full-width fade-in effect */
 }
 
 .home-content {
