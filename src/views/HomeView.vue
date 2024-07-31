@@ -1,6 +1,9 @@
 <template>
   <div class="home container wow animate__animated animate__fadeIn">
-    <div class="home-content d-flex align-items-center flex-column flex-md-row">
+    <div
+      class="home-content d-flex align-items-center flex-column flex-md-row"
+      id="home"
+    >
       <div class="col image-container">
         <img src="@/assets/Home/kohli.png" alt="Dr. Gurmander Singh Kohli" />
       </div>
@@ -13,7 +16,7 @@
           Plastic Surgery, he is certified by the American Board of Plastic
           Surgery and is a fellow of the American College of Surgeons.
         </p>
-        <button class="btn contact-btn">Contact Dr. Kohli</button>
+        <a href="#contact" class="btn contact-btn">Contact Dr. Kohli</a>
       </div>
     </div>
     <Profile />

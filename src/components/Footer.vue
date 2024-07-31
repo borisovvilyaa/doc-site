@@ -22,12 +22,12 @@
               <ul class="thumbnail-widget">
                 <li>
                   <div class="thumb-content">
-                    <a href="/#Home" style="color: white">Home</a>
+                    <a href="/#home" style="color: white">Home</a>
                   </div>
                 </li>
                 <li>
                   <div class="thumb-content">
-                    <a href="/#About" style="color: white">About</a>
+                    <a href="/#about" style="color: white">About</a>
                   </div>
                 </li>
               </ul>

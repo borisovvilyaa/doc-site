@@ -31,10 +31,10 @@
       >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="/#Home" class="nav-link" @click="closeMenu">Home</a>
+            <a href="/#home" class="nav-link" @click="closeMenu">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/#About" class="nav-link" @click="closeMenu">About</a>
+            <a href="/#about" class="nav-link" @click="closeMenu">About</a>
           </li>
         </ul>
       </div>

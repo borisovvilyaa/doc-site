@@ -1,5 +1,8 @@
 <template>
-  <div class="contact-section wow animate__animated animate__fadeIn">
+  <div
+    class="contact-section wow animate__animated animate__fadeIn"
+    id="contact"
+  >
     <div class="container">
       <div class="row">
         <div class="col-md-4">
